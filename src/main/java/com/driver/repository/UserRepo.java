@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 @Repository
 public class UserRepo {
-    private static final Map<Integer, User> userDB=new HashMap<>();
+    private static Map<Integer, User> userDB=new HashMap<>();
 
     public int save(User user){
         userDB.put(user.getaadharCardNo(),user);
