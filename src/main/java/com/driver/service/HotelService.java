@@ -10,10 +10,8 @@ import java.util.*;
 @Service
 public class HotelService {
 
-    private final HotelRepo hotelRepo;
-    public HotelService(HotelRepo hotelRepo){
-        this.hotelRepo=hotelRepo;
-    }
+    private final HotelRepo hotelRepo=new HotelRepo();
+
     public boolean createHotel(Hotel hotel) {
 
         return hotelRepo.save(hotel);

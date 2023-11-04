@@ -13,13 +13,10 @@ import java.util.UUID;
 
 @Service
 public class BookingService {
-    private final HotelRepo hotelRepo;
-    private final BookingRepo bookingRepo;
+    private final HotelRepo hotelRepo=new HotelRepo();
+    private final BookingRepo bookingRepo=new BookingRepo();
 
-    public BookingService(HotelRepo hotelRepo,BookingRepo bookingRepo){
-        this.hotelRepo=hotelRepo;
-        this.bookingRepo=bookingRepo;
-    }
+
 
     public int createBookings(Booking booking){
         String hotelName=booking.getHotelName();

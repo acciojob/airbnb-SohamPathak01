@@ -21,13 +21,10 @@ import java.util.*;
 @RestController
 @RequestMapping("/hotel")
 public class HotelManagementController {
-
-    @Autowired
-    UserService userService;
-    @Autowired
-    HotelService hotelService;
-    @Autowired
-    BookingService bookingService;
+    
+    UserService userService=new UserService();
+    HotelService hotelService=new HotelService();
+    BookingService bookingService=new BookingService();
 
 
     @PostMapping("/add-hotel")
