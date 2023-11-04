@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 @Repository
 public class HotelRepo {
-    private final Map<String, Hotel> hotelDB=new HashMap<>();
+    private static final Map<String, Hotel> hotelDB=new HashMap<>();
 
     public boolean save(Hotel hotel){
 
