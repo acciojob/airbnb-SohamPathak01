@@ -13,8 +13,8 @@ import java.util.UUID;
 
 @Service
 public class BookingService {
-    private final HotelRepo hotelRepo=new HotelRepo();
-    private final BookingRepo bookingRepo=new BookingRepo();
+    private final static HotelRepo hotelRepo=new HotelRepo();
+    private final static BookingRepo bookingRepo=new BookingRepo();
 
 
 
