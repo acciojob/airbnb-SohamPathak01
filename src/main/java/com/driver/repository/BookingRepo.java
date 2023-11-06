@@ -8,7 +8,7 @@ import java.util.Map;
 
 @Repository
 public class BookingRepo {
-    private static final Map<String, Booking> bookingDB=new HashMap<>();
+    private final static Map<String, Booking> bookingDB=new HashMap<>();
 
     public void save(Booking booking){
         bookingDB.put(booking.getBookingId(),booking);
